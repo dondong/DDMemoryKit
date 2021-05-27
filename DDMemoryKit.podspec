@@ -26,12 +26,12 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'dondong' => 'the-last-choice@qq.com' }
   s.source           = { :git => 'https://github.com/dondong/DDMemoryKit.git', :tag => s.version.to_s }
-  s.static_framework = true
+  # s.static_framework = true
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'Classes/*'
+  s.source_files = 'DDMemoryKit/Classes/*'
   
   # s.resource_bundles = {
   #   'DDMemoryKit' => ['DDMemoryKit/Assets/*.png']
