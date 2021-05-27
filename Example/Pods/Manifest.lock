@@ -1,0 +1,16 @@
+PODS:
+  - DDMemoryKit (0.1.0)
+
+DEPENDENCIES:
+  - DDMemoryKit (from `../`)
+
+EXTERNAL SOURCES:
+  DDMemoryKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DDMemoryKit: d454531e40482f4fbfa3fedf3192e31208c05193
+
+PODFILE CHECKSUM: e870f40be97ecc013ccd73164e81e5d6ce7ca7b8
+
+COCOAPODS: 1.10.1
