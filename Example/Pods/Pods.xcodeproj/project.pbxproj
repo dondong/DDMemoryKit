@@ -10,7 +10,38 @@
 		1D40473148B8E11CE4BA0E908A17D268 /* DDMemoryKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2FA02FF06A7E6E0E85D9A716ED2D54 /* DDMemoryKit-dummy.m */; };
 		2A3760D997D452CC11C0E9B312E6E8CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		60F10A7FFF827191B34CAF540AC63A6C /* DDMemoryKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3350171156090DE671AD00F3E0F08DD /* DDMemoryKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		77DDF3E2261B55ED1F1C051671A2B56A /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA786127AC379C38B7FE710E2AB6C95 /* ReplaceMe.m */; };
+		A3891D82265FAB0E009BA2EF /* DDMacho+Codesign.m in Sources */ = {isa = PBXBuildFile; fileRef = A3891D72265FAB0E009BA2EF /* DDMacho+Codesign.m */; };
+		A3891D83265FAB0E009BA2EF /* DDMacho+Codesign.m in Sources */ = {isa = PBXBuildFile; fileRef = A3891D72265FAB0E009BA2EF /* DDMacho+Codesign.m */; };
+		A3891D84265FAB0E009BA2EF /* DDMacho.m in Sources */ = {isa = PBXBuildFile; fileRef = A3891D73265FAB0E009BA2EF /* DDMacho.m */; };
+		A3891D85265FAB0E009BA2EF /* DDMacho.m in Sources */ = {isa = PBXBuildFile; fileRef = A3891D73265FAB0E009BA2EF /* DDMacho.m */; };
+		A3891D86265FAB0E009BA2EF /* dd_macho.h in Headers */ = {isa = PBXBuildFile; fileRef = A3891D74265FAB0E009BA2EF /* dd_macho.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3891D87265FAB0E009BA2EF /* dd_macho.h in Headers */ = {isa = PBXBuildFile; fileRef = A3891D74265FAB0E009BA2EF /* dd_macho.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3891D88265FAB0E009BA2EF /* dd_macho_objective_c.h in Headers */ = {isa = PBXBuildFile; fileRef = A3891D75265FAB0E009BA2EF /* dd_macho_objective_c.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3891D89265FAB0E009BA2EF /* dd_macho_objective_c.h in Headers */ = {isa = PBXBuildFile; fileRef = A3891D75265FAB0E009BA2EF /* dd_macho_objective_c.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3891D8A265FAB0E009BA2EF /* dd_macho_symtab.h in Headers */ = {isa = PBXBuildFile; fileRef = A3891D76265FAB0E009BA2EF /* dd_macho_symtab.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3891D8B265FAB0E009BA2EF /* dd_macho_symtab.h in Headers */ = {isa = PBXBuildFile; fileRef = A3891D76265FAB0E009BA2EF /* dd_macho_symtab.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3891D8C265FAB0E009BA2EF /* DDMacho+Symtab.h in Headers */ = {isa = PBXBuildFile; fileRef = A3891D77265FAB0E009BA2EF /* DDMacho+Symtab.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3891D8D265FAB0E009BA2EF /* DDMacho+Symtab.h in Headers */ = {isa = PBXBuildFile; fileRef = A3891D77265FAB0E009BA2EF /* DDMacho+Symtab.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3891D8E265FAB0E009BA2EF /* DDMacho+Objective_C.h in Headers */ = {isa = PBXBuildFile; fileRef = A3891D78265FAB0E009BA2EF /* DDMacho+Objective_C.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3891D8F265FAB0E009BA2EF /* DDMacho+Objective_C.h in Headers */ = {isa = PBXBuildFile; fileRef = A3891D78265FAB0E009BA2EF /* DDMacho+Objective_C.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3891D90265FAB0E009BA2EF /* dd_macho_codesign.h in Headers */ = {isa = PBXBuildFile; fileRef = A3891D79265FAB0E009BA2EF /* dd_macho_codesign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3891D91265FAB0E009BA2EF /* dd_macho_codesign.h in Headers */ = {isa = PBXBuildFile; fileRef = A3891D79265FAB0E009BA2EF /* dd_macho_codesign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3891D92265FAB0E009BA2EF /* dd_macho.c in Sources */ = {isa = PBXBuildFile; fileRef = A3891D7A265FAB0E009BA2EF /* dd_macho.c */; };
+		A3891D93265FAB0E009BA2EF /* dd_macho.c in Sources */ = {isa = PBXBuildFile; fileRef = A3891D7A265FAB0E009BA2EF /* dd_macho.c */; };
+		A3891D94265FAB0E009BA2EF /* DDMacho.h in Headers */ = {isa = PBXBuildFile; fileRef = A3891D7B265FAB0E009BA2EF /* DDMacho.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3891D95265FAB0E009BA2EF /* DDMacho.h in Headers */ = {isa = PBXBuildFile; fileRef = A3891D7B265FAB0E009BA2EF /* DDMacho.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3891D96265FAB0E009BA2EF /* DDMacho+Codesign.h in Headers */ = {isa = PBXBuildFile; fileRef = A3891D7C265FAB0E009BA2EF /* DDMacho+Codesign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3891D97265FAB0E009BA2EF /* DDMacho+Codesign.h in Headers */ = {isa = PBXBuildFile; fileRef = A3891D7C265FAB0E009BA2EF /* DDMacho+Codesign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3891D98265FAB0E009BA2EF /* dd_macho_symtab.c in Sources */ = {isa = PBXBuildFile; fileRef = A3891D7D265FAB0E009BA2EF /* dd_macho_symtab.c */; };
+		A3891D99265FAB0E009BA2EF /* dd_macho_symtab.c in Sources */ = {isa = PBXBuildFile; fileRef = A3891D7D265FAB0E009BA2EF /* dd_macho_symtab.c */; };
+		A3891D9A265FAB0E009BA2EF /* dd_macho_objective_c.c in Sources */ = {isa = PBXBuildFile; fileRef = A3891D7E265FAB0E009BA2EF /* dd_macho_objective_c.c */; };
+		A3891D9B265FAB0E009BA2EF /* dd_macho_objective_c.c in Sources */ = {isa = PBXBuildFile; fileRef = A3891D7E265FAB0E009BA2EF /* dd_macho_objective_c.c */; };
+		A3891D9C265FAB0E009BA2EF /* dd_macho_codesign.c in Sources */ = {isa = PBXBuildFile; fileRef = A3891D7F265FAB0E009BA2EF /* dd_macho_codesign.c */; };
+		A3891D9D265FAB0E009BA2EF /* dd_macho_codesign.c in Sources */ = {isa = PBXBuildFile; fileRef = A3891D7F265FAB0E009BA2EF /* dd_macho_codesign.c */; };
+		A3891D9E265FAB0E009BA2EF /* DDMacho+Objective_C.m in Sources */ = {isa = PBXBuildFile; fileRef = A3891D80265FAB0E009BA2EF /* DDMacho+Objective_C.m */; };
+		A3891D9F265FAB0E009BA2EF /* DDMacho+Objective_C.m in Sources */ = {isa = PBXBuildFile; fileRef = A3891D80265FAB0E009BA2EF /* DDMacho+Objective_C.m */; };
+		A3891DA0265FAB0E009BA2EF /* DDMacho+Symtab.m in Sources */ = {isa = PBXBuildFile; fileRef = A3891D81265FAB0E009BA2EF /* DDMacho+Symtab.m */; };
+		A3891DA1265FAB0E009BA2EF /* DDMacho+Symtab.m in Sources */ = {isa = PBXBuildFile; fileRef = A3891D81265FAB0E009BA2EF /* DDMacho+Symtab.m */; };
 		CCE16FEEBE4EC779313ACA76CBCA9336 /* Pods-DDMemoryKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3750CFB24AEB8CF39AF4D0720BC4DEFF /* Pods-DDMemoryKit_Tests-dummy.m */; };
 		D64082B1C66690E9BC7C740377BEA51C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		E48ADF46401AB3466D2073AF7723DED5 /* Pods-DDMemoryKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ADA10196841915B74E2062815D553503 /* Pods-DDMemoryKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -34,7 +65,6 @@
 		2D37467846876CA289196F0F3FF3EE9D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		3750CFB24AEB8CF39AF4D0720BC4DEFF /* Pods-DDMemoryKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DDMemoryKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		3DA519647394543FA949279E7DCD4249 /* DDMemoryKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DDMemoryKit.modulemap; sourceTree = "<group>"; };
-		3EA786127AC379C38B7FE710E2AB6C95 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = DDMemoryKit/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		4A9EFF67D76CBA5FBB2EC7FA6A148627 /* Pods-DDMemoryKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DDMemoryKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4B8F3FC28E6D32E7235C3AA824CDD4DA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4C5806E282F059CE65EB65E0D2268AF3 /* DDMemoryKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DDMemoryKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +73,22 @@
 		79B69991A6256FCA206272CDEF599BB4 /* Pods_DDMemoryKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDMemoryKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9FF5AD3AE2931D6765284A95749A99D4 /* DDMemoryKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDMemoryKit-prefix.pch"; sourceTree = "<group>"; };
+		A3891D72265FAB0E009BA2EF /* DDMacho+Codesign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DDMacho+Codesign.m"; sourceTree = "<group>"; };
+		A3891D73265FAB0E009BA2EF /* DDMacho.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMacho.m; sourceTree = "<group>"; };
+		A3891D74265FAB0E009BA2EF /* dd_macho.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dd_macho.h; sourceTree = "<group>"; };
+		A3891D75265FAB0E009BA2EF /* dd_macho_objective_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dd_macho_objective_c.h; sourceTree = "<group>"; };
+		A3891D76265FAB0E009BA2EF /* dd_macho_symtab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dd_macho_symtab.h; sourceTree = "<group>"; };
+		A3891D77265FAB0E009BA2EF /* DDMacho+Symtab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDMacho+Symtab.h"; sourceTree = "<group>"; };
+		A3891D78265FAB0E009BA2EF /* DDMacho+Objective_C.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDMacho+Objective_C.h"; sourceTree = "<group>"; };
+		A3891D79265FAB0E009BA2EF /* dd_macho_codesign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dd_macho_codesign.h; sourceTree = "<group>"; };
+		A3891D7A265FAB0E009BA2EF /* dd_macho.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dd_macho.c; sourceTree = "<group>"; };
+		A3891D7B265FAB0E009BA2EF /* DDMacho.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMacho.h; sourceTree = "<group>"; };
+		A3891D7C265FAB0E009BA2EF /* DDMacho+Codesign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDMacho+Codesign.h"; sourceTree = "<group>"; };
+		A3891D7D265FAB0E009BA2EF /* dd_macho_symtab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dd_macho_symtab.c; sourceTree = "<group>"; };
+		A3891D7E265FAB0E009BA2EF /* dd_macho_objective_c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dd_macho_objective_c.c; sourceTree = "<group>"; };
+		A3891D7F265FAB0E009BA2EF /* dd_macho_codesign.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dd_macho_codesign.c; sourceTree = "<group>"; };
+		A3891D80265FAB0E009BA2EF /* DDMacho+Objective_C.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DDMacho+Objective_C.m"; sourceTree = "<group>"; };
+		A3891D81265FAB0E009BA2EF /* DDMacho+Symtab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DDMacho+Symtab.m"; sourceTree = "<group>"; };
 		ADA10196841915B74E2062815D553503 /* Pods-DDMemoryKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DDMemoryKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		CB55A887F985EA0DA0ED1C2FA5C5878D /* Pods-DDMemoryKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DDMemoryKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E6F4AAC5F68CA5C5D078FEC234C586BC /* Pods-DDMemoryKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DDMemoryKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +169,30 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
+		A3891D71265FAB0E009BA2EF /* Macho */ = {
+			isa = PBXGroup;
+			children = (
+				A3891D7F265FAB0E009BA2EF /* dd_macho_codesign.c */,
+				A3891D79265FAB0E009BA2EF /* dd_macho_codesign.h */,
+				A3891D7E265FAB0E009BA2EF /* dd_macho_objective_c.c */,
+				A3891D75265FAB0E009BA2EF /* dd_macho_objective_c.h */,
+				A3891D7D265FAB0E009BA2EF /* dd_macho_symtab.c */,
+				A3891D76265FAB0E009BA2EF /* dd_macho_symtab.h */,
+				A3891D7A265FAB0E009BA2EF /* dd_macho.c */,
+				A3891D74265FAB0E009BA2EF /* dd_macho.h */,
+				A3891D7B265FAB0E009BA2EF /* DDMacho.h */,
+				A3891D73265FAB0E009BA2EF /* DDMacho.m */,
+				A3891D7C265FAB0E009BA2EF /* DDMacho+Codesign.h */,
+				A3891D72265FAB0E009BA2EF /* DDMacho+Codesign.m */,
+				A3891D78265FAB0E009BA2EF /* DDMacho+Objective_C.h */,
+				A3891D80265FAB0E009BA2EF /* DDMacho+Objective_C.m */,
+				A3891D77265FAB0E009BA2EF /* DDMacho+Symtab.h */,
+				A3891D81265FAB0E009BA2EF /* DDMacho+Symtab.m */,
+			);
+			name = Macho;
+			path = DDMemoryKit/Classes/Macho;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +232,7 @@
 		E193187B438398E034A6D05AFBA486C6 /* DDMemoryKit */ = {
 			isa = PBXGroup;
 			children = (
-				3EA786127AC379C38B7FE710E2AB6C95 /* ReplaceMe.m */,
+				A3891D71265FAB0E009BA2EF /* Macho */,
 				9D02B662E251C0551C07A87633BEE77A /* Pod */,
 				1C21235EB0AC80E0FDC4A4F860173362 /* Support Files */,
 			);
@@ -186,6 +256,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				60F10A7FFF827191B34CAF540AC63A6C /* DDMemoryKit-umbrella.h in Headers */,
+				A3891D96265FAB0E009BA2EF /* DDMacho+Codesign.h in Headers */,
+				A3891D8C265FAB0E009BA2EF /* DDMacho+Symtab.h in Headers */,
+				A3891D90265FAB0E009BA2EF /* dd_macho_codesign.h in Headers */,
+				A3891D8A265FAB0E009BA2EF /* dd_macho_symtab.h in Headers */,
+				A3891D88265FAB0E009BA2EF /* dd_macho_objective_c.h in Headers */,
+				A3891D86265FAB0E009BA2EF /* dd_macho.h in Headers */,
+				A3891D8E265FAB0E009BA2EF /* DDMacho+Objective_C.h in Headers */,
+				A3891D94265FAB0E009BA2EF /* DDMacho.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +272,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E48ADF46401AB3466D2073AF7723DED5 /* Pods-DDMemoryKit_Tests-umbrella.h in Headers */,
+				A3891D97265FAB0E009BA2EF /* DDMacho+Codesign.h in Headers */,
+				A3891D8D265FAB0E009BA2EF /* DDMacho+Symtab.h in Headers */,
+				A3891D91265FAB0E009BA2EF /* dd_macho_codesign.h in Headers */,
+				A3891D8B265FAB0E009BA2EF /* dd_macho_symtab.h in Headers */,
+				A3891D89265FAB0E009BA2EF /* dd_macho_objective_c.h in Headers */,
+				A3891D87265FAB0E009BA2EF /* dd_macho.h in Headers */,
+				A3891D8F265FAB0E009BA2EF /* DDMacho+Objective_C.h in Headers */,
+				A3891D95265FAB0E009BA2EF /* DDMacho.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +373,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3891D9F265FAB0E009BA2EF /* DDMacho+Objective_C.m in Sources */,
+				A3891D9B265FAB0E009BA2EF /* dd_macho_objective_c.c in Sources */,
+				A3891D9D265FAB0E009BA2EF /* dd_macho_codesign.c in Sources */,
+				A3891DA1265FAB0E009BA2EF /* DDMacho+Symtab.m in Sources */,
+				A3891D85265FAB0E009BA2EF /* DDMacho.m in Sources */,
+				A3891D83265FAB0E009BA2EF /* DDMacho+Codesign.m in Sources */,
+				A3891D93265FAB0E009BA2EF /* dd_macho.c in Sources */,
+				A3891D99265FAB0E009BA2EF /* dd_macho_symtab.c in Sources */,
 				CCE16FEEBE4EC779313ACA76CBCA9336 /* Pods-DDMemoryKit_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,8 +389,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3891D9E265FAB0E009BA2EF /* DDMacho+Objective_C.m in Sources */,
+				A3891D9A265FAB0E009BA2EF /* dd_macho_objective_c.c in Sources */,
+				A3891D9C265FAB0E009BA2EF /* dd_macho_codesign.c in Sources */,
+				A3891DA0265FAB0E009BA2EF /* DDMacho+Symtab.m in Sources */,
+				A3891D84265FAB0E009BA2EF /* DDMacho.m in Sources */,
+				A3891D82265FAB0E009BA2EF /* DDMacho+Codesign.m in Sources */,
+				A3891D92265FAB0E009BA2EF /* dd_macho.c in Sources */,
+				A3891D98265FAB0E009BA2EF /* dd_macho_symtab.c in Sources */,
 				1D40473148B8E11CE4BA0E908A17D268 /* DDMemoryKit-dummy.m in Sources */,
-				77DDF3E2261B55ED1F1C051671A2B56A /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
