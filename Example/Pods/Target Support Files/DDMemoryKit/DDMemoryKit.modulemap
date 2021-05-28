@@ -1,6 +1,0 @@
-framework module DDMemoryKit {
-  umbrella header "DDMemoryKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

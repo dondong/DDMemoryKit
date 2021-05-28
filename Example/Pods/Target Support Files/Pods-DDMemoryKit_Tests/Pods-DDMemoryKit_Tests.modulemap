@@ -1,6 +1,0 @@
-framework module Pods_DDMemoryKit_Tests {
-  umbrella header "Pods-DDMemoryKit_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}
