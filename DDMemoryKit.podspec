@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.summary  = 'A description of DDMemoryKit.'
   s.homepage = 'https://github.com/dondong/DDMemoryKit'
   s.authors  = { 'dondong' => 'the-last-choice@qq.com' }
-  s.source   = { :path => '/Users/dongmingdong/Desktop/DDKit/tmp/DDMemoryKit' }
+  s.source   = { :git => 'https://github.com/dondong/DDMemoryKit.git' }
   s.static_framework = false
   
   s.platform = :ios
