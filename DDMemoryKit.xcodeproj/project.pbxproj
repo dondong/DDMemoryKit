@@ -7,33 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A3181D0B2661171100C7BB4F /* dd_macho.h in Headers */ = {isa = PBXBuildFile; fileRef = A3181D032661171100C7BB4F /* dd_macho.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3181D0C2661171100C7BB4F /* dd_macho_objective_c.h in Headers */ = {isa = PBXBuildFile; fileRef = A3181D042661171100C7BB4F /* dd_macho_objective_c.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3181D0D2661171100C7BB4F /* dd_macho_symtab.h in Headers */ = {isa = PBXBuildFile; fileRef = A3181D052661171100C7BB4F /* dd_macho_symtab.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3181D0E2661171100C7BB4F /* dd_macho_codesign.h in Headers */ = {isa = PBXBuildFile; fileRef = A3181D062661171100C7BB4F /* dd_macho_codesign.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3181D0F2661171100C7BB4F /* dd_macho.c in Sources */ = {isa = PBXBuildFile; fileRef = A3181D072661171100C7BB4F /* dd_macho.c */; };
-		A3181D102661171100C7BB4F /* dd_macho.c in Sources */ = {isa = PBXBuildFile; fileRef = A3181D072661171100C7BB4F /* dd_macho.c */; };
-		A3181D112661171100C7BB4F /* dd_macho_symtab.c in Sources */ = {isa = PBXBuildFile; fileRef = A3181D082661171100C7BB4F /* dd_macho_symtab.c */; };
-		A3181D122661171100C7BB4F /* dd_macho_symtab.c in Sources */ = {isa = PBXBuildFile; fileRef = A3181D082661171100C7BB4F /* dd_macho_symtab.c */; };
-		A3181D132661171100C7BB4F /* dd_macho_objective_c.c in Sources */ = {isa = PBXBuildFile; fileRef = A3181D092661171100C7BB4F /* dd_macho_objective_c.c */; };
-		A3181D142661171100C7BB4F /* dd_macho_objective_c.c in Sources */ = {isa = PBXBuildFile; fileRef = A3181D092661171100C7BB4F /* dd_macho_objective_c.c */; };
-		A3181D152661171100C7BB4F /* dd_macho_codesign.c in Sources */ = {isa = PBXBuildFile; fileRef = A3181D0A2661171100C7BB4F /* dd_macho_codesign.c */; };
-		A3181D162661171100C7BB4F /* dd_macho_codesign.c in Sources */ = {isa = PBXBuildFile; fileRef = A3181D0A2661171100C7BB4F /* dd_macho_codesign.c */; };
-		A33FF05A2655305200EF0BAA /* DDMacho.m in Sources */ = {isa = PBXBuildFile; fileRef = A33FF0572655302300EF0BAA /* DDMacho.m */; };
-		A344729C2653C803008F95E3 /* DDMemoryKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A344726D2653C5A6008F95E3 /* DDMemoryKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3B060A026563536009D7821 /* DDMacho+Objective_C.h in Headers */ = {isa = PBXBuildFile; fileRef = A3B0609E26563536009D7821 /* DDMacho+Objective_C.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3B060A126563536009D7821 /* DDMacho+Objective_C.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B0609F26563536009D7821 /* DDMacho+Objective_C.m */; };
-		A3CBFDE3266117B900BB6084 /* dd_memory_kit.h in Headers */ = {isa = PBXBuildFile; fileRef = A3CBFDE2266117B900BB6084 /* dd_memory_kit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3CBFDE42661186100BB6084 /* dd_memory_kit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A3CBFDE2266117B900BB6084 /* dd_memory_kit.h */; };
-		A3CBFDE52661186100BB6084 /* dd_macho_codesign.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A3181D062661171100C7BB4F /* dd_macho_codesign.h */; };
-		A3CBFDE62661186100BB6084 /* dd_macho_objective_c.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A3181D042661171100C7BB4F /* dd_macho_objective_c.h */; };
-		A3CBFDE72661186100BB6084 /* dd_macho_symtab.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A3181D052661171100C7BB4F /* dd_macho_symtab.h */; };
-		A3CBFDE82661186100BB6084 /* dd_macho.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A3181D032661171100C7BB4F /* dd_macho.h */; };
-		A3E63F612655FD94008A4F3D /* DDMacho.h in Headers */ = {isa = PBXBuildFile; fileRef = A33FF0562655302300EF0BAA /* DDMacho.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3FD8F2526575CBB007F2DE8 /* DDMacho+Codesign.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FD8F2326575CBB007F2DE8 /* DDMacho+Codesign.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3FD8F2626575CBB007F2DE8 /* DDMacho+Codesign.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FD8F2426575CBB007F2DE8 /* DDMacho+Codesign.m */; };
-		A3FD8F2E265763FA007F2DE8 /* DDMacho+Symtab.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FD8F2C265763FA007F2DE8 /* DDMacho+Symtab.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3FD8F2F265763FA007F2DE8 /* DDMacho+Symtab.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FD8F2D265763FA007F2DE8 /* DDMacho+Symtab.m */; };
+		A352DCF12664BA2A00E08FB3 /* DDMacho+Codesign.m in Sources */ = {isa = PBXBuildFile; fileRef = A352DCDC2664BA2A00E08FB3 /* DDMacho+Codesign.m */; };
+		A352DCF22664BA2A00E08FB3 /* DDMacho.m in Sources */ = {isa = PBXBuildFile; fileRef = A352DCDD2664BA2A00E08FB3 /* DDMacho.m */; };
+		A352DCF32664BA2A00E08FB3 /* DDMacho+Symtab.h in Headers */ = {isa = PBXBuildFile; fileRef = A352DCDE2664BA2A00E08FB3 /* DDMacho+Symtab.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A352DCF42664BA2A00E08FB3 /* DDMacho+Objective_C.h in Headers */ = {isa = PBXBuildFile; fileRef = A352DCDF2664BA2A00E08FB3 /* DDMacho+Objective_C.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A352DCF52664BA2A00E08FB3 /* DDMacho.h in Headers */ = {isa = PBXBuildFile; fileRef = A352DCE02664BA2A00E08FB3 /* DDMacho.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A352DCF62664BA2A00E08FB3 /* DDMacho+Codesign.h in Headers */ = {isa = PBXBuildFile; fileRef = A352DCE12664BA2A00E08FB3 /* DDMacho+Codesign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A352DCF72664BA2A00E08FB3 /* DDMacho+Objective_C.m in Sources */ = {isa = PBXBuildFile; fileRef = A352DCE22664BA2A00E08FB3 /* DDMacho+Objective_C.m */; };
+		A352DCF82664BA2A00E08FB3 /* DDMacho+Symtab.m in Sources */ = {isa = PBXBuildFile; fileRef = A352DCE32664BA2A00E08FB3 /* DDMacho+Symtab.m */; };
+		A352DCFA2664BA2A00E08FB3 /* dd_macho.h in Headers */ = {isa = PBXBuildFile; fileRef = A352DCE72664BA2A00E08FB3 /* dd_macho.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A352DCFB2664BA2A00E08FB3 /* dd_macho_objective_c.h in Headers */ = {isa = PBXBuildFile; fileRef = A352DCE82664BA2A00E08FB3 /* dd_macho_objective_c.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A352DCFC2664BA2A00E08FB3 /* dd_macho_symtab.h in Headers */ = {isa = PBXBuildFile; fileRef = A352DCE92664BA2A00E08FB3 /* dd_macho_symtab.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A352DCFD2664BA2A00E08FB3 /* dd_macho_codesign.h in Headers */ = {isa = PBXBuildFile; fileRef = A352DCEA2664BA2A00E08FB3 /* dd_macho_codesign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A352DCFE2664BA2A00E08FB3 /* dd_macho.c in Sources */ = {isa = PBXBuildFile; fileRef = A352DCEB2664BA2A00E08FB3 /* dd_macho.c */; };
+		A352DCFF2664BA2A00E08FB3 /* dd_macho_symtab.c in Sources */ = {isa = PBXBuildFile; fileRef = A352DCEC2664BA2A00E08FB3 /* dd_macho_symtab.c */; };
+		A352DD002664BA2A00E08FB3 /* dd_macho_objective_c.c in Sources */ = {isa = PBXBuildFile; fileRef = A352DCED2664BA2A00E08FB3 /* dd_macho_objective_c.c */; };
+		A352DD012664BA2A00E08FB3 /* dd_macho_codesign.c in Sources */ = {isa = PBXBuildFile; fileRef = A352DCEE2664BA2A00E08FB3 /* dd_macho_codesign.c */; };
+		A352DD022664BA2A00E08FB3 /* dd_memory_kit.h in Headers */ = {isa = PBXBuildFile; fileRef = A352DCEF2664BA2A00E08FB3 /* dd_memory_kit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A352DD032664BA2A00E08FB3 /* DDMemoryKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A352DCF02664BA2A00E08FB3 /* DDMemoryKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A352DD042664BA3F00E08FB3 /* dd_macho_codesign.c in Sources */ = {isa = PBXBuildFile; fileRef = A352DCEE2664BA2A00E08FB3 /* dd_macho_codesign.c */; };
+		A352DD052664BA4200E08FB3 /* dd_macho_objective_c.c in Sources */ = {isa = PBXBuildFile; fileRef = A352DCED2664BA2A00E08FB3 /* dd_macho_objective_c.c */; };
+		A352DD062664BA4500E08FB3 /* dd_macho_symtab.c in Sources */ = {isa = PBXBuildFile; fileRef = A352DCEC2664BA2A00E08FB3 /* dd_macho_symtab.c */; };
+		A352DD072664BA4800E08FB3 /* dd_macho.c in Sources */ = {isa = PBXBuildFile; fileRef = A352DCEB2664BA2A00E08FB3 /* dd_macho.c */; };
+		A352DD082664BAA900E08FB3 /* dd_macho_codesign.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A352DCEA2664BA2A00E08FB3 /* dd_macho_codesign.h */; };
+		A352DD092664BAA900E08FB3 /* dd_macho_objective_c.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A352DCE82664BA2A00E08FB3 /* dd_macho_objective_c.h */; };
+		A352DD0A2664BAA900E08FB3 /* dd_macho_symtab.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A352DCE92664BA2A00E08FB3 /* dd_macho_symtab.h */; };
+		A352DD0B2664BAA900E08FB3 /* dd_macho.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A352DCE72664BA2A00E08FB3 /* dd_macho.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,38 +42,37 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				A3CBFDE42661186100BB6084 /* dd_memory_kit.h in CopyFiles */,
-				A3CBFDE52661186100BB6084 /* dd_macho_codesign.h in CopyFiles */,
-				A3CBFDE62661186100BB6084 /* dd_macho_objective_c.h in CopyFiles */,
-				A3CBFDE72661186100BB6084 /* dd_macho_symtab.h in CopyFiles */,
-				A3CBFDE82661186100BB6084 /* dd_macho.h in CopyFiles */,
+				A352DD082664BAA900E08FB3 /* dd_macho_codesign.h in CopyFiles */,
+				A352DD092664BAA900E08FB3 /* dd_macho_objective_c.h in CopyFiles */,
+				A352DD0A2664BAA900E08FB3 /* dd_macho_symtab.h in CopyFiles */,
+				A352DD0B2664BAA900E08FB3 /* dd_macho.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A3181D032661171100C7BB4F /* dd_macho.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dd_macho.h; sourceTree = "<group>"; };
-		A3181D042661171100C7BB4F /* dd_macho_objective_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dd_macho_objective_c.h; sourceTree = "<group>"; };
-		A3181D052661171100C7BB4F /* dd_macho_symtab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dd_macho_symtab.h; sourceTree = "<group>"; };
-		A3181D062661171100C7BB4F /* dd_macho_codesign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dd_macho_codesign.h; sourceTree = "<group>"; };
-		A3181D072661171100C7BB4F /* dd_macho.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dd_macho.c; sourceTree = "<group>"; };
-		A3181D082661171100C7BB4F /* dd_macho_symtab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dd_macho_symtab.c; sourceTree = "<group>"; };
-		A3181D092661171100C7BB4F /* dd_macho_objective_c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dd_macho_objective_c.c; sourceTree = "<group>"; };
-		A3181D0A2661171100C7BB4F /* dd_macho_codesign.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dd_macho_codesign.c; sourceTree = "<group>"; };
-		A33FF0562655302300EF0BAA /* DDMacho.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDMacho.h; sourceTree = "<group>"; };
-		A33FF0572655302300EF0BAA /* DDMacho.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDMacho.m; sourceTree = "<group>"; };
-		A344726D2653C5A6008F95E3 /* DDMemoryKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDMemoryKit.h; sourceTree = "<group>"; };
-		A344726E2653C5A6008F95E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A33659EF2664BBCD0085914E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		A34472792653C748008F95E3 /* libDDMemoryKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDDMemoryKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A34472872653C767008F95E3 /* DDMemoryKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DDMemoryKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A3B0609E26563536009D7821 /* DDMacho+Objective_C.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DDMacho+Objective_C.h"; sourceTree = "<group>"; };
-		A3B0609F26563536009D7821 /* DDMacho+Objective_C.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DDMacho+Objective_C.m"; sourceTree = "<group>"; };
-		A3CBFDE2266117B900BB6084 /* dd_memory_kit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dd_memory_kit.h; sourceTree = "<group>"; };
-		A3FD8F2326575CBB007F2DE8 /* DDMacho+Codesign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DDMacho+Codesign.h"; sourceTree = "<group>"; };
-		A3FD8F2426575CBB007F2DE8 /* DDMacho+Codesign.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DDMacho+Codesign.m"; sourceTree = "<group>"; };
-		A3FD8F2C265763FA007F2DE8 /* DDMacho+Symtab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DDMacho+Symtab.h"; sourceTree = "<group>"; };
-		A3FD8F2D265763FA007F2DE8 /* DDMacho+Symtab.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DDMacho+Symtab.m"; sourceTree = "<group>"; };
+		A352DCDC2664BA2A00E08FB3 /* DDMacho+Codesign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DDMacho+Codesign.m"; sourceTree = "<group>"; };
+		A352DCDD2664BA2A00E08FB3 /* DDMacho.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMacho.m; sourceTree = "<group>"; };
+		A352DCDE2664BA2A00E08FB3 /* DDMacho+Symtab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDMacho+Symtab.h"; sourceTree = "<group>"; };
+		A352DCDF2664BA2A00E08FB3 /* DDMacho+Objective_C.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDMacho+Objective_C.h"; sourceTree = "<group>"; };
+		A352DCE02664BA2A00E08FB3 /* DDMacho.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMacho.h; sourceTree = "<group>"; };
+		A352DCE12664BA2A00E08FB3 /* DDMacho+Codesign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDMacho+Codesign.h"; sourceTree = "<group>"; };
+		A352DCE22664BA2A00E08FB3 /* DDMacho+Objective_C.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DDMacho+Objective_C.m"; sourceTree = "<group>"; };
+		A352DCE32664BA2A00E08FB3 /* DDMacho+Symtab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DDMacho+Symtab.m"; sourceTree = "<group>"; };
+		A352DCE72664BA2A00E08FB3 /* dd_macho.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dd_macho.h; sourceTree = "<group>"; };
+		A352DCE82664BA2A00E08FB3 /* dd_macho_objective_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dd_macho_objective_c.h; sourceTree = "<group>"; };
+		A352DCE92664BA2A00E08FB3 /* dd_macho_symtab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dd_macho_symtab.h; sourceTree = "<group>"; };
+		A352DCEA2664BA2A00E08FB3 /* dd_macho_codesign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dd_macho_codesign.h; sourceTree = "<group>"; };
+		A352DCEB2664BA2A00E08FB3 /* dd_macho.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dd_macho.c; sourceTree = "<group>"; };
+		A352DCEC2664BA2A00E08FB3 /* dd_macho_symtab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dd_macho_symtab.c; sourceTree = "<group>"; };
+		A352DCED2664BA2A00E08FB3 /* dd_macho_objective_c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dd_macho_objective_c.c; sourceTree = "<group>"; };
+		A352DCEE2664BA2A00E08FB3 /* dd_macho_codesign.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dd_macho_codesign.c; sourceTree = "<group>"; };
+		A352DCEF2664BA2A00E08FB3 /* dd_memory_kit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dd_memory_kit.h; sourceTree = "<group>"; };
+		A352DCF02664BA2A00E08FB3 /* DDMemoryKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDMemoryKit.h; path = Classes/DDMemoryKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,30 +93,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A3181D012661171100C7BB4F /* core */ = {
-			isa = PBXGroup;
-			children = (
-				A3CBFDE2266117B900BB6084 /* dd_memory_kit.h */,
-				A3181D022661171100C7BB4F /* macho */,
-			);
-			path = core;
-			sourceTree = "<group>";
-		};
-		A3181D022661171100C7BB4F /* macho */ = {
-			isa = PBXGroup;
-			children = (
-				A3181D0A2661171100C7BB4F /* dd_macho_codesign.c */,
-				A3181D062661171100C7BB4F /* dd_macho_codesign.h */,
-				A3181D092661171100C7BB4F /* dd_macho_objective_c.c */,
-				A3181D042661171100C7BB4F /* dd_macho_objective_c.h */,
-				A3181D082661171100C7BB4F /* dd_macho_symtab.c */,
-				A3181D052661171100C7BB4F /* dd_macho_symtab.h */,
-				A3181D072661171100C7BB4F /* dd_macho.c */,
-				A3181D032661171100C7BB4F /* dd_macho.h */,
-			);
-			path = macho;
-			sourceTree = "<group>";
-		};
 		A34472602653C5A6008F95E3 = {
 			isa = PBXGroup;
 			children = (
@@ -139,35 +113,62 @@
 		A344726C2653C5A6008F95E3 /* DDMemoryKit */ = {
 			isa = PBXGroup;
 			children = (
-				A3181D012661171100C7BB4F /* core */,
-				A398DBA32653CA68000A1623 /* Macho */,
-				A3F252012657C257003601BD /* Objective-C */,
-				A344726D2653C5A6008F95E3 /* DDMemoryKit.h */,
-				A344726E2653C5A6008F95E3 /* Info.plist */,
+				A352DCE52664BA2A00E08FB3 /* core */,
+				A352DCDB2664BA2A00E08FB3 /* Macho */,
+				A352DCDA2664BA2A00E08FB3 /* Objective-C */,
+				A352DCF02664BA2A00E08FB3 /* DDMemoryKit.h */,
+				A33659EF2664BBCD0085914E /* Info.plist */,
 			);
 			path = DDMemoryKit;
 			sourceTree = "<group>";
 		};
-		A398DBA32653CA68000A1623 /* Macho */ = {
+		A352DCDA2664BA2A00E08FB3 /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
-				A33FF0562655302300EF0BAA /* DDMacho.h */,
-				A33FF0572655302300EF0BAA /* DDMacho.m */,
-				A3B0609E26563536009D7821 /* DDMacho+Objective_C.h */,
-				A3B0609F26563536009D7821 /* DDMacho+Objective_C.m */,
-				A3FD8F2C265763FA007F2DE8 /* DDMacho+Symtab.h */,
-				A3FD8F2D265763FA007F2DE8 /* DDMacho+Symtab.m */,
-				A3FD8F2326575CBB007F2DE8 /* DDMacho+Codesign.h */,
-				A3FD8F2426575CBB007F2DE8 /* DDMacho+Codesign.m */,
 			);
-			path = Macho;
+			name = "Objective-C";
+			path = "Classes/Objective-C";
 			sourceTree = "<group>";
 		};
-		A3F252012657C257003601BD /* Objective-C */ = {
+		A352DCDB2664BA2A00E08FB3 /* Macho */ = {
 			isa = PBXGroup;
 			children = (
+				A352DCE02664BA2A00E08FB3 /* DDMacho.h */,
+				A352DCDD2664BA2A00E08FB3 /* DDMacho.m */,
+				A352DCE12664BA2A00E08FB3 /* DDMacho+Codesign.h */,
+				A352DCDC2664BA2A00E08FB3 /* DDMacho+Codesign.m */,
+				A352DCDF2664BA2A00E08FB3 /* DDMacho+Objective_C.h */,
+				A352DCE22664BA2A00E08FB3 /* DDMacho+Objective_C.m */,
+				A352DCDE2664BA2A00E08FB3 /* DDMacho+Symtab.h */,
+				A352DCE32664BA2A00E08FB3 /* DDMacho+Symtab.m */,
 			);
-			path = "Objective-C";
+			name = Macho;
+			path = Classes/Macho;
+			sourceTree = "<group>";
+		};
+		A352DCE52664BA2A00E08FB3 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				A352DCEF2664BA2A00E08FB3 /* dd_memory_kit.h */,
+				A352DCE62664BA2A00E08FB3 /* macho */,
+			);
+			name = core;
+			path = Classes/core;
+			sourceTree = "<group>";
+		};
+		A352DCE62664BA2A00E08FB3 /* macho */ = {
+			isa = PBXGroup;
+			children = (
+				A352DCEE2664BA2A00E08FB3 /* dd_macho_codesign.c */,
+				A352DCEA2664BA2A00E08FB3 /* dd_macho_codesign.h */,
+				A352DCED2664BA2A00E08FB3 /* dd_macho_objective_c.c */,
+				A352DCE82664BA2A00E08FB3 /* dd_macho_objective_c.h */,
+				A352DCEC2664BA2A00E08FB3 /* dd_macho_symtab.c */,
+				A352DCE92664BA2A00E08FB3 /* dd_macho_symtab.h */,
+				A352DCEB2664BA2A00E08FB3 /* dd_macho.c */,
+				A352DCE72664BA2A00E08FB3 /* dd_macho.h */,
+			);
+			path = macho;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,16 +178,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3B060A026563536009D7821 /* DDMacho+Objective_C.h in Headers */,
-				A3FD8F2526575CBB007F2DE8 /* DDMacho+Codesign.h in Headers */,
-				A3181D0C2661171100C7BB4F /* dd_macho_objective_c.h in Headers */,
-				A344729C2653C803008F95E3 /* DDMemoryKit.h in Headers */,
-				A3181D0B2661171100C7BB4F /* dd_macho.h in Headers */,
-				A3181D0D2661171100C7BB4F /* dd_macho_symtab.h in Headers */,
-				A3E63F612655FD94008A4F3D /* DDMacho.h in Headers */,
-				A3CBFDE3266117B900BB6084 /* dd_memory_kit.h in Headers */,
-				A3181D0E2661171100C7BB4F /* dd_macho_codesign.h in Headers */,
-				A3FD8F2E265763FA007F2DE8 /* DDMacho+Symtab.h in Headers */,
+				A352DCFA2664BA2A00E08FB3 /* dd_macho.h in Headers */,
+				A352DCFB2664BA2A00E08FB3 /* dd_macho_objective_c.h in Headers */,
+				A352DCF52664BA2A00E08FB3 /* DDMacho.h in Headers */,
+				A352DCFD2664BA2A00E08FB3 /* dd_macho_codesign.h in Headers */,
+				A352DCF32664BA2A00E08FB3 /* DDMacho+Symtab.h in Headers */,
+				A352DCF42664BA2A00E08FB3 /* DDMacho+Objective_C.h in Headers */,
+				A352DCFC2664BA2A00E08FB3 /* dd_macho_symtab.h in Headers */,
+				A352DD022664BA2A00E08FB3 /* dd_memory_kit.h in Headers */,
+				A352DD032664BA2A00E08FB3 /* DDMemoryKit.h in Headers */,
+				A352DCF62664BA2A00E08FB3 /* DDMacho+Codesign.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +268,6 @@
 		A34472852653C767008F95E3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
-			files = (
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
@@ -278,10 +277,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3181D142661171100C7BB4F /* dd_macho_objective_c.c in Sources */,
-				A3181D122661171100C7BB4F /* dd_macho_symtab.c in Sources */,
-				A3181D162661171100C7BB4F /* dd_macho_codesign.c in Sources */,
-				A3181D102661171100C7BB4F /* dd_macho.c in Sources */,
+				A352DD062664BA4500E08FB3 /* dd_macho_symtab.c in Sources */,
+				A352DD052664BA4200E08FB3 /* dd_macho_objective_c.c in Sources */,
+				A352DD072664BA4800E08FB3 /* dd_macho.c in Sources */,
+				A352DD042664BA3F00E08FB3 /* dd_macho_codesign.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,14 +288,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3181D112661171100C7BB4F /* dd_macho_symtab.c in Sources */,
-				A3181D132661171100C7BB4F /* dd_macho_objective_c.c in Sources */,
-				A3181D0F2661171100C7BB4F /* dd_macho.c in Sources */,
-				A3B060A126563536009D7821 /* DDMacho+Objective_C.m in Sources */,
-				A33FF05A2655305200EF0BAA /* DDMacho.m in Sources */,
-				A3FD8F2626575CBB007F2DE8 /* DDMacho+Codesign.m in Sources */,
-				A3181D152661171100C7BB4F /* dd_macho_codesign.c in Sources */,
-				A3FD8F2F265763FA007F2DE8 /* DDMacho+Symtab.m in Sources */,
+				A352DCFF2664BA2A00E08FB3 /* dd_macho_symtab.c in Sources */,
+				A352DD002664BA2A00E08FB3 /* dd_macho_objective_c.c in Sources */,
+				A352DCFE2664BA2A00E08FB3 /* dd_macho.c in Sources */,
+				A352DCF22664BA2A00E08FB3 /* DDMacho.m in Sources */,
+				A352DCF12664BA2A00E08FB3 /* DDMacho+Codesign.m in Sources */,
+				A352DCF82664BA2A00E08FB3 /* DDMacho+Symtab.m in Sources */,
+				A352DD012664BA2A00E08FB3 /* dd_macho_codesign.c in Sources */,
+				A352DCF72664BA2A00E08FB3 /* DDMacho+Objective_C.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -411,7 +410,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -470,7 +469,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = DDMemoryKit/Info.plist;
+				INFOPLIST_FILE = "Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -498,7 +497,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREPROCESSOR_DEFINITIONS = "";
-				INFOPLIST_FILE = DDMemoryKit/Info.plist;
+				INFOPLIST_FILE = "Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
