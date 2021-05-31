@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.subspec 'Macho' do |ss|
     ss.source_files = 'Code/Macho/*.{h,m}'
     ss.public_header_files = 'Code/Macho/*.h'
-    ss.dependency 'Code/core/macho'
+    ss.dependency 'DDMemoryKit/core/macho'
   end
 
   s.subspec 'core' do |ss|
