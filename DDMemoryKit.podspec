@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
     ss.source_files = 'DDMemoryKit/core/dd_memory_kit.h'
     ss.subspec 'macho' do |sss|
       sss.source_files = 'DDMemoryKit/core/macho/*.{h,c}'
-      sss.public_header_files = 'DDDMemoryKit/core/macho/*.h'
+      sss.public_header_files = 'DDMemoryKit/core/macho/*.h'
     end
   end
 
