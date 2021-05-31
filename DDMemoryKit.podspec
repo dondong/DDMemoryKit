@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.version  = '0.0.1'
   s.license  = 'MIT'
   s.summary  = 'A description of DDMemoryKit.'
-  s.homepage = 'https://github.com/dondong/DDMemoryKit'
+  s.homepage = 'https://github.com/dondong/DDKit'
   s.authors  = { 'dondong' => 'the-last-choice@qq.com' }
   s.source   = { :git => 'https://github.com/dondong/DDMemoryKit.git' }
   s.static_framework = false
@@ -25,8 +25,9 @@ Pod::Spec.new do |s|
   s.subspec 'Macho' do |ss|
     ss.source_files = 'DDMemoryKit/Macho/*.{h,m}'
     ss.public_header_files = 'DDMemoryKit/Macho/*.h'
+    ss.dependency 'DDMemoryKit/core/macho'
   end
-  
+
   s.subspec 'core' do |ss|
     ss.source_files = 'DDMemoryKit/core/dd_memory_kit.h'
     ss.subspec 'macho' do |sss|
