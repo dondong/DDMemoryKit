@@ -20,19 +20,19 @@ Pod::Spec.new do |s|
 
   s.ios.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER' => 'com.dd.kit.memory' }
 
-  s.source_files = 'DDMemoryKit/Classes/DDMemoryKit.h'
-  s.public_header_files = 'DDMemoryKit/Classes/DDMemoryKit.h'
+  s.source_files = 'Framework/DDMemoryKit/DDMemoryKit.h'
+  s.public_header_files = 'Framework/DDMemoryKit/DDMemoryKit.h'
   s.subspec 'Macho' do |ss|
-    ss.source_files = 'DDMemoryKit/Classes/Macho/*.{h,m}'
-    ss.public_header_files = 'DDMemoryKit/Classes/Macho/*.h'
+    ss.source_files = 'Framework/DDMemoryKit/Macho/*.{h,m}'
+    ss.public_header_files = 'Framework/DDMemoryKit/Macho/*.h'
     ss.dependency 'DDMemoryKit/core/macho'
   end
 
   s.subspec 'core' do |ss|
-    ss.source_files = 'DDMemoryKit/Classes/core/dd_memory_kit.h'
+    ss.source_files = 'Framework/DDMemoryKit/core/dd_memory_kit.h'
     ss.subspec 'macho' do |sss|
-      sss.source_files = 'DDMemoryKit/Classes/core/macho/*.{h,c}'
-      sss.public_header_files = 'DDMemoryKit/Classes/core/macho/*.h'
+      sss.source_files = 'Framework/DDMemoryKit/core/macho/*.{h,c}'
+      sss.public_header_files = 'Framework/DDMemoryKit/core/macho/*.h'
     end
   end
 
