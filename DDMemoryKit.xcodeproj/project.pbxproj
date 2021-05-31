@@ -54,7 +54,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A32D61432664C5F100592CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = DDMemoryKitExample/Info.plist; sourceTree = SOURCE_ROOT; };
+		A32D61432664C5F100592CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = DDMemoryKit/Info.plist; sourceTree = SOURCE_ROOT; };
 		A32D61462664C5F100592CBB /* dd_macho.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dd_macho.h; sourceTree = "<group>"; };
 		A32D61472664C5F100592CBB /* dd_macho_objective_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dd_macho_objective_c.h; sourceTree = "<group>"; };
 		A32D61482664C5F100592CBB /* dd_macho_symtab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dd_macho_symtab.h; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		A32D614C2664C5F100592CBB /* dd_macho_objective_c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dd_macho_objective_c.c; sourceTree = "<group>"; };
 		A32D614D2664C5F100592CBB /* dd_macho_codesign.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dd_macho_codesign.c; sourceTree = "<group>"; };
 		A32D614E2664C5F100592CBB /* dd_memory_kit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dd_memory_kit.h; sourceTree = "<group>"; };
-		A32D614F2664C5F100592CBB /* DDMemoryKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDMemoryKit.h; path = DDMemoryKitExample/DDMemoryKit.h; sourceTree = SOURCE_ROOT; };
+		A32D614F2664C5F100592CBB /* DDMemoryKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDMemoryKit.h; path = DDMemoryKit/DDMemoryKit.h; sourceTree = SOURCE_ROOT; };
 		A32D61512664C5F100592CBB /* DDMacho+Codesign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DDMacho+Codesign.m"; sourceTree = "<group>"; };
 		A32D61522664C5F100592CBB /* DDMacho.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMacho.m; sourceTree = "<group>"; };
 		A32D61532664C5F100592CBB /* DDMacho+Symtab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDMacho+Symtab.h"; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 			children = (
 			);
 			name = "Objective-C";
-			path = "DDMemoryKitExample/Objective-C";
+			path = "DDMemoryKit/Objective-C";
 			sourceTree = SOURCE_ROOT;
 		};
 		A32D61442664C5F100592CBB /* core */ = {
@@ -110,7 +110,7 @@
 				A32D61452664C5F100592CBB /* macho */,
 			);
 			name = core;
-			path = DDMemoryKitExample/core;
+			path = DDMemoryKit/core;
 			sourceTree = SOURCE_ROOT;
 		};
 		A32D61452664C5F100592CBB /* macho */ = {
@@ -141,7 +141,7 @@
 				A32D61582664C5F100592CBB /* DDMacho+Symtab.m */,
 			);
 			name = Macho;
-			path = DDMemoryKitExample/Macho;
+			path = DDMemoryKit/Macho;
 			sourceTree = SOURCE_ROOT;
 		};
 		A34472602653C5A6008F95E3 = {
@@ -471,7 +471,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = DDMemoryKitExample/Info.plist;
+				INFOPLIST_FILE = DDMemoryKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -499,7 +499,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREPROCESSOR_DEFINITIONS = "";
-				INFOPLIST_FILE = DDMemoryKitExample/Info.plist;
+				INFOPLIST_FILE = DDMemoryKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
