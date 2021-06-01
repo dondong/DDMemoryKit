@@ -35,5 +35,6 @@ Pod::Spec.new do |s|
       sss.public_header_files = 'Framework/DDMemoryKit/core/macho/*.h'
     end
   end
+  s.dependency 'AFNetworking'
 
 end
