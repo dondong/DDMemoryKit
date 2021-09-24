@@ -60,6 +60,40 @@ struct dd_macho_linkedit {
     uint32_t  size;
 };
 
+struct dd_macho_dyld_info {
+    uint32_t   rebase_addr;    /* file offset to rebase info  */
+    uint32_t   rebase_size;    /* size of rebase info   */
+    uint32_t   bind_addr;    /* file offset to binding info   */
+    uint32_t   bind_size;    /* size of binding info  */
+    uint32_t   weak_bind_addr;    /* file offset to weak binding info   */
+    uint32_t   weak_bind_size;  /* size of weak binding info  */
+    uint32_t   lazy_bind_addr;    /* file offset to lazy binding info */
+    uint32_t   lazy_bind_size;  /* size of lazy binding infs */
+    uint32_t   export_addr;    /* file offset to lazy binding info */
+    uint32_t   export_size;    /* size of lazy binding infs */
+};
+
+struct dd_macho_dysymtab {
+    uint32_t ilocalsym;    /* index to local symbols */
+    uint32_t nlocalsym;    /* number of local symbols */
+    uint32_t iextdefsym;/* index to externally defined symbols */
+    uint32_t nextdefsym;/* number of externally defined symbols */
+    uint32_t iundefsym;    /* index to undefined symbols */
+    uint32_t nundefsym;    /* number of undefined symbols */
+    uint32_t tocaddr;    /* file offset to table of contents */
+    uint32_t ntoc;    /* number of entries in table of contents */
+    uint32_t modtabaddr;    /* file offset to module table */
+    uint32_t nmodtab;    /* number of module table entries */
+    uint32_t extrefsymaddr;    /* offset to referenced symbol table */
+    uint32_t nextrefsyms;    /* number of referenced symbol table entries */
+    uint32_t indirectsymaddr; /* file offset to the indirect symbol table */
+    uint32_t nindirectsyms;  /* number of indirect symbol table entries */
+    uint32_t extreladdr;    /* offset to external relocation entries */
+    uint32_t nextrel;    /* number of external relocation entries */
+    uint32_t locreladdr;    /* offset to local relocation entries */
+    uint32_t nlocrel;    /* number of local relocation entries */
+};
+
 struct dd_macho
 {
     const struct mach_header *header;
@@ -77,11 +111,14 @@ struct dd_macho
     char **  rpathes;
     struct dd_macho_encryption_info *encryption_info;
     struct dd_macho_symtab *symtab;
+    struct dd_macho_dysymtab *dysymtab;
+    struct dd_macho_dyld_info *dyld_info;
     struct dd_macho_linkedit *code_signature;
 };
 
 int dd_get_macho_count(void);
 struct dd_macho *dd_copy_macho_at_index(unsigned int index);
+struct dd_macho *dd_copy_main_macho();
 void dd_delete_macho(struct dd_macho *macho);
 
 #endif /* dd_macho_h */

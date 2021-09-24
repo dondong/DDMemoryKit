@@ -8,6 +8,18 @@
 #include "dd_macho.h"
 #include <malloc/_malloc.h>
 
+struct dd_macho *dd_copy_main_macho()
+{
+    int count = _dyld_image_count();
+    for (int i = 0; i < count; ++i) {
+        const struct mach_header *header = _dyld_get_image_header(i);
+        if (MH_EXECUTE == header->filetype) {
+            return dd_copy_macho_at_index(i);
+        }
+    }
+    return NULL;
+}
+
 int dd_get_macho_count(void)
 {
     return _dyld_image_count();
@@ -24,6 +36,8 @@ struct dd_macho *dd_copy_macho_at_index(unsigned int index)
     macho->rpathes  = NULL;
     macho->encryption_info = NULL;
     macho->symtab          = NULL;
+    macho->dysymtab        = NULL;
+    macho->dyld_info       = NULL;
     macho->code_signature  = NULL;
     const struct mach_header *header = _dyld_get_image_header((uint32_t)index);
     macho->header = header;
@@ -215,6 +229,51 @@ struct dd_macho *dd_copy_macho_at_index(unsigned int index)
                 }
             }
                 break;
+            case LC_DYSYMTAB:
+            {
+                if (NULL == macho->dysymtab) {
+                    macho->dysymtab = malloc(sizeof(struct dd_macho_dysymtab));
+                    struct dysymtab_command *command = (struct dysymtab_command *)cmdPtr;
+                    macho->dysymtab->ilocalsym = command->ilocalsym;
+                    macho->dysymtab->nlocalsym = command->nlocalsym;
+                    macho->dysymtab->iextdefsym = command->iextdefsym;
+                    macho->dysymtab->nextdefsym = command->nextdefsym;
+                    macho->dysymtab->iundefsym = command->iundefsym;
+                    macho->dysymtab->nundefsym = command->nundefsym;
+                    macho->dysymtab->tocaddr = command->tocoff;
+                    macho->dysymtab->ntoc    = command->ntoc;
+                    macho->dysymtab->modtabaddr = command->modtaboff;
+                    macho->dysymtab->nmodtab    = command->nmodtab;
+                    macho->dysymtab->extrefsymaddr = command->extrefsymoff;
+                    macho->dysymtab->nextrefsyms   = command->nextrefsyms;
+                    macho->dysymtab->indirectsymaddr = command->indirectsymoff;
+                    macho->dysymtab->nindirectsyms   = command->nindirectsyms;
+                    macho->dysymtab->extreladdr = command->extreloff;
+                    macho->dysymtab->nextrel    = command->nextrel;
+                    macho->dysymtab->locreladdr = command->locreloff;
+                    macho->dysymtab->nlocrel    = command->nlocrel;
+                }
+            }
+                break;
+            case LC_DYLD_INFO:
+            case LC_DYLD_INFO_ONLY:
+            {
+                if (NULL == macho->dyld_info) {
+                    macho->dyld_info = malloc(sizeof(struct dd_macho_dyld_info));
+                    struct dyld_info_command *command = (struct dyld_info_command *)cmdPtr;
+                    macho->dyld_info->rebase_addr = command->rebase_off;
+                    macho->dyld_info->rebase_size = command->rebase_size;
+                    macho->dyld_info->bind_addr = command->bind_off;
+                    macho->dyld_info->bind_size = command->bind_size;
+                    macho->dyld_info->weak_bind_addr = command->weak_bind_off;
+                    macho->dyld_info->weak_bind_size = command->weak_bind_size;
+                    macho->dyld_info->lazy_bind_addr = command->lazy_bind_off;
+                    macho->dyld_info->lazy_bind_size = command->lazy_bind_size;
+                    macho->dyld_info->export_addr = command->export_off;
+                    macho->dyld_info->export_size = command->export_size;
+                }
+            }
+                break;
             case LC_CODE_SIGNATURE:
             {
                 if (NULL == macho->code_signature) {
@@ -283,6 +342,14 @@ void dd_delete_macho(struct dd_macho *macho)
         if (NULL != macho->symtab) {
             free(macho->symtab);
             macho->symtab = NULL;
+        }
+        if (NULL != macho->dysymtab) {
+            free(macho->dysymtab);
+            macho->dysymtab = NULL;
+        }
+        if (NULL != macho->dyld_info) {
+            free(macho->dyld_info);
+            macho->dyld_info = NULL;
         }
         if (NULL != macho->code_signature) {
             free(macho->code_signature);

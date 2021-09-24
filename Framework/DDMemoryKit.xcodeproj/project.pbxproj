@@ -170,7 +170,6 @@
 				A32D614F2664C5F100592CBB /* DDMemoryKit.h */,
 				A32D61432664C5F100592CBB /* Info.plist */,
 			);
-			name = DDMemoryKit;
 			path = DDMemoryKit;
 			sourceTree = "<group>";
 		};
