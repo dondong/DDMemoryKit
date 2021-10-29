@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name     = 'DDMemoryKit'
-  s.version  = '0.0.1'
+  s.version  = '0.0.2'
   s.license  = 'MIT'
   s.summary  = 'A description of DDMemoryKit.'
   s.homepage = 'https://github.com/dondong/DDKit'
