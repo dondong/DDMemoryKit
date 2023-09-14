@@ -8,7 +8,7 @@
 #ifndef dd_macho_objective_c_h
 #define dd_macho_objective_c_h
 
-#include "dd_macho.h"
+#include <dd_macho.h>
 #import <objc/runtime.h>
 
 struct dd_macho_function_info

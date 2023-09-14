@@ -8,7 +8,7 @@
 #include "dd_macho.h"
 #include <malloc/_malloc.h>
 
-struct dd_macho *dd_copy_main_macho()
+struct dd_macho *dd_copy_main_macho(void)
 {
     int count = _dyld_image_count();
     for (int i = 0; i < count; ++i) {
@@ -38,6 +38,7 @@ struct dd_macho *dd_copy_macho_at_index(unsigned int index)
     macho->symtab          = NULL;
     macho->dysymtab        = NULL;
     macho->dyld_info       = NULL;
+    macho->function_starts = NULL;
     macho->code_signature  = NULL;
     const struct mach_header *header = _dyld_get_image_header((uint32_t)index);
     macho->header = header;
@@ -274,13 +275,25 @@ struct dd_macho *dd_copy_macho_at_index(unsigned int index)
                 }
             }
                 break;
+            case LC_FUNCTION_STARTS:
             case LC_CODE_SIGNATURE:
             {
-                if (NULL == macho->code_signature) {
-                    macho->code_signature = malloc(sizeof(struct dd_macho_linkedit));
-                    struct linkedit_data_command *command = (struct linkedit_data_command *)cmdPtr;
-                    macho->code_signature->addr = command->dataoff;
-                    macho->code_signature->size = command->datasize;
+                struct dd_macho_linkedit *linkedit = malloc(sizeof(struct dd_macho_linkedit));
+                struct linkedit_data_command *command = (struct linkedit_data_command *)cmdPtr;
+                linkedit->addr = command->dataoff;
+                linkedit->size = command->datasize;
+                if (loadCmd->cmd == LC_FUNCTION_STARTS) {
+                    if (NULL != macho->function_starts) {
+                        free(macho->function_starts);
+                    }
+                    macho->function_starts = linkedit;
+                } else if (loadCmd->cmd == LC_CODE_SIGNATURE) {
+                    if (NULL != macho->code_signature) {
+                        free(macho->code_signature);
+                    }
+                    macho->code_signature = linkedit;
+                } else {
+                    free(linkedit);
                 }
             }
                 break;
@@ -297,6 +310,14 @@ struct dd_macho *dd_copy_macho_at_index(unsigned int index)
         } else {
             free(macho->symtab);
             macho->symtab = NULL;
+        }
+    }
+    if (NULL != macho->function_starts) {
+        if (0 != file_offset) {
+            macho->function_starts->addr = vmaddr + macho->function_starts->addr - file_offset + slide;
+        } else {
+            free(macho->function_starts);
+            macho->function_starts = NULL;
         }
     }
     if (NULL != macho->code_signature) {
@@ -350,6 +371,10 @@ void dd_delete_macho(struct dd_macho *macho)
         if (NULL != macho->dyld_info) {
             free(macho->dyld_info);
             macho->dyld_info = NULL;
+        }
+        if (NULL != macho->function_starts) {
+            free(macho->function_starts);
+            macho->function_starts = NULL;
         }
         if (NULL != macho->code_signature) {
             free(macho->code_signature);

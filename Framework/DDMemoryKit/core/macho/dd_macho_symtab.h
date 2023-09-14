@@ -8,7 +8,7 @@
 #ifndef dd_macho_symtab_h
 #define dd_macho_symtab_h
 
-#include "dd_macho.h"
+#include <dd_macho.h>
 
 char **dd_macho_copy_sym_strings(struct dd_macho *macho, int *size);
 

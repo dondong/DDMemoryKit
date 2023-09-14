@@ -9,7 +9,7 @@
 #define dd_macho_codesign_h
 
 
-#include "dd_macho.h"
+#include <dd_macho.h>
 
 char *dd_macho_get_identifier(struct dd_macho *macho);
 char *dd_macho_copy_entitlements(struct dd_macho *macho);

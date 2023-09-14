@@ -113,12 +113,13 @@ struct dd_macho
     struct dd_macho_symtab *symtab;
     struct dd_macho_dysymtab *dysymtab;
     struct dd_macho_dyld_info *dyld_info;
+    struct dd_macho_linkedit *function_starts;
     struct dd_macho_linkedit *code_signature;
 };
 
 int dd_get_macho_count(void);
 struct dd_macho *dd_copy_macho_at_index(unsigned int index);
-struct dd_macho *dd_copy_main_macho();
+struct dd_macho *dd_copy_main_macho(void);
 void dd_delete_macho(struct dd_macho *macho);
 
 #endif /* dd_macho_h */
